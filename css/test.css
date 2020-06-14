@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #e3e3e3;
+}
+
+.main-header {
+    height: 68px;
+    background-color: #ff7f00;
+}
+
+.main-content {
+    width: 1300px;
+    height: 560px;
+    margin-top: 25px;
+    margin-left: 54px;
+}
+
+button {
+    border: unset;
+    outline: none;
+    background-color: unset;
+}
+
+:hover button {
+    cursor: pointer;
+}
+
+.gallery {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.about {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.logo-top {
+    padding-left: 10px;
+    width: 133px;
+    height: 22px;
+}
+
+.logo-bottom {
+    margin-top: 10px;
+    width: 133px;
+    height: 22px;
+}
+
+.between-buttons {
+    color: black;
+}
+
+.top-buttons {
+    width: 155px;
+    height: 32px;
+}
+
+.canvas-container {
+    width: 650px;
+    height: 550px;
+    /* background-color: rgb(199, 25, 25); */
+}
+
+.side-content {
+    width: 374px;
+    height: 550px;
+}
+
+.meme-text {
+    width: 373px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    outline: unset;
+    text-align: center;
+}
+
+.font-style {
+    width: 218px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    outline: unset;
+    text-align: center;
+}
+
+.shere {
+    width: 120px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #ff7f00;
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.add-items {
+    /* Style for "Rounded Re" */
+    width: 373px;
+    height: 100px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.main-footer {
+    height: 140px;
+    background-color: #ff7f00;
+}
+
+.footer-text {
+    color: #ffffff;
+    font-family: "Montserrat - Thin";
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.three-buttons {
+    width: 210px;
+    height: 60px;
+}
+
+.five-buttons {
+     width: 374px; 
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.container{
+    width: 374px;
+}
+
+.five-and-font-style {
+    height: 130px;
+    width: 218px;
+}
+
+.tow-last-bottom{
+    width: 140px;
+
+}
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.flex-end {
+    justify-content: flex-end;
+}

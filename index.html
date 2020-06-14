@@ -9,17 +9,31 @@
 </head>
 
 <body onload="init()">
+    <div class="screen" onclick="onToggleMenu()"></div>
     <header class="main-header flex space-between align-center">
 
         <img class="logo-top" src="./pic/LOGO.png" alt="">
-        <div class="top-buttons">
-            <button class="gallery" onclick="onTransferToGalery()">gallery</button><button class="about"><span
-                    class="between-buttons">|</span>
+      
+        <ul class="main-nav flex clean-list">
+            <li>
+                <a class="gallery visibility" onclick="onTransferToGalery()" title="Back to gallery" href="#">Gallery</a>
+            </li>
+          
+            <li class="about-li">
+                <a class="about visibility" href="#"> <span>|</span> About</a>
+            </li>
+        </ul>
+      
+<!--       
+        <div class="top-buttons main-nav">
+            <button class="gallery visibility" onclick="onTransferToGalery()">gallery</button><button class="about visibility"><span class="between-buttons">|</span>
                 about</button>
-        </div>
-
+        </div> -->
+       
+       
+       
+        <button class="btn-menu display-none" onclick="onToggleMenu()" >☰</button>
     </header>
-
     <div class="hide-show-main-content" style="display: none;">
 
         <main class="canvas-and-editor main-content flex  space-between">
@@ -27,10 +41,10 @@
                 <canvas id="my-canvas" style="border: 1px solid rgba(126, 124, 124, 0.89);"></canvas>
             </div>
 
-            <div class="editor-container flex column space-between">
-               
+            <div class="editor-container flex column space-between container">
+
                 <input class="meme-text" type="text" placeholder="enter text" onkeydown="onUpdateText(event)">
-              
+
                 <div class="first-section-buttons flex space-between ">
                     <img class="btn" src="ICONS/up-down.png" alt="" onclick="onSwitchlines()">
                     <img class="btn" src="ICONS/up.png" alt="" onclick="onTxtUpOrDown(-10)">
@@ -39,6 +53,8 @@
                     <img class="btn" src="ICONS/trash.png" alt="" onclick="onDelete()">
                 </div>
 
+
+
                 <div class="second-section-buttons flex space-between">
                     <img class="btn" src="ICONS/a+.png" alt="" onclick="onEditFontSize(3)">
                     <img class="btn" src="ICONS/a-.png" alt="" onclick="onEditFontSize(-3)">
@@ -46,6 +62,7 @@
                     <img class="btn" src="ICONS/center-text-alignment.png" alt="" onclick="onAlignToCenter()">
                     <img class="btn" src="ICONS/align-to-right.png" alt="" onclick="onAlignToRight()">
                 </div>
+
 
                 <div class="therd-section  flex space-between">
                     <select class="font-style" name="" id="" onclick="onFontChange(this)">
@@ -80,7 +97,7 @@
     </div>
     <footer class="main-footer  flex column align-center">
         <img class="logo-bottom" src="./pic/LOGO.png" alt="">
-        <p class="footer-text">all rights reserved 2020</p>
+        <p class="footer-text">all rights reserved 2019</p>
     </footer>
     <script src="js/utils.js"></script>
     <script src="js/memeService.js"></script>
