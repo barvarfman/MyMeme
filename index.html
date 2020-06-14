@@ -19,65 +19,53 @@
         </div>
 
     </header>
+
     <div class="hide-show-main-content" style="display: none;">
 
-
-
-        <main class=" flex column space-between">
-
-
-            <div class="canvas-and-editor main-content flex row  space-between">
-                <div class="canvas-container">
-                    <canvas id="my-canvas" style="border: 1px solid rgba(126, 124, 124, 0.89);"></canvas>
-                </div>
-
-
-                <div class="editor-container flex column space-between container">
-
-                    <input class="meme-text" type="text" placeholder="enter text" onkeydown="onUpdateText(event)">
-
-                    <div class="first-section-buttons flex space-between ">
-                        <img class="btn" src="ICONS/up-down.png" alt="" onclick="onSwitchlines()">
-                        <img class="btn" src="ICONS/up.png" alt="" onclick="onTxtUpOrDown(-10)">
-                        <img class="btn" src="ICONS/down.png" alt="" onclick="onTxtUpOrDown(10)">
-                        <img class="btn" src="ICONS/add.png" alt="" onclick="onAddLine()">
-                        <img class="btn" src="ICONS/trash.png" alt="" onclick="onDelete()">
-                    </div>
-
-
-
-                    <div class="second-section-buttons flex space-between">
-                        <img class="btn" src="ICONS/a+.png" alt="" onclick="onEditFontSize(3)">
-                        <img class="btn" src="ICONS/a-.png" alt="" onclick="onEditFontSize(-3)">
-                        <img class="btn" src="ICONS/align-to-left.png" alt="" onclick="onAlignToLeft()">
-                        <img class="btn" src="ICONS/center-text-alignment.png" alt="" onclick="onAlignToCenter()">
-                        <img class="btn" src="ICONS/align-to-right.png" alt="" onclick="onAlignToRight()">
-                    </div>
-
-
-                    <div class="  flex space-between">
-                        <select class="font-style" name="" id="" onclick="onFontChange(this)">
-                            <option value="Impact">Impact</option>
-                            <option value="monospace">monospace</option>
-                            <option value="Montserrat">Montserrat</option>
-                        </select>
-
-                        <img class="btn" src="ICONS/text stroke.png" alt="" onclick="onBorderColor()">
-                        <input id="textColor" class="btn text-color" type="color" onchange="onChangeColor(this)">
-                    </div>
-
-                    <div class="add-items flex align-center space-between">
-                        <img class="btn2" src="ICONS/left.png" alt="">
-                        <img class="btn2" src="ICONS/right.png" alt="">
-                    </div>
-                    <div class="download-container flex flex-end">
-                        <a class="Download" href="#" onclick="onDownloadMeme(this)" download="">Download</a>
-                    </div>
-
-
-                </div>
+        <main class="canvas-and-editor main-content flex  space-between">
+            <div class="canvas-container">
+                <canvas id="my-canvas" style="border: 1px solid rgba(126, 124, 124, 0.89);"></canvas>
             </div>
 
+            <div class="editor-container flex column space-between">
+               
+                <input class="meme-text" type="text" placeholder="enter text" onkeydown="onUpdateText(event)">
+              
+                <div class="first-section-buttons flex space-between ">
+                    <img class="btn" src="ICONS/up-down.png" alt="" onclick="onSwitchlines()">
+                    <img class="btn" src="ICONS/up.png" alt="" onclick="onTxtUpOrDown(-10)">
+                    <img class="btn" src="ICONS/down.png" alt="" onclick="onTxtUpOrDown(10)">
+                    <img class="btn" src="ICONS/add.png" alt="" onclick="onAddLine()">
+                    <img class="btn" src="ICONS/trash.png" alt="" onclick="onDelete()">
+                </div>
+
+                <div class="second-section-buttons flex space-between">
+                    <img class="btn" src="ICONS/a+.png" alt="" onclick="onEditFontSize(3)">
+                    <img class="btn" src="ICONS/a-.png" alt="" onclick="onEditFontSize(-3)">
+                    <img class="btn" src="ICONS/align-to-left.png" alt="" onclick="onAlignToLeft()">
+                    <img class="btn" src="ICONS/center-text-alignment.png" alt="" onclick="onAlignToCenter()">
+                    <img class="btn" src="ICONS/align-to-right.png" alt="" onclick="onAlignToRight()">
+                </div>
+
+                <div class="therd-section  flex space-between">
+                    <select class="font-style" name="" id="" onclick="onFontChange(this)">
+                        <option value="Impact">Impact</option>
+                        <option value="monospace">monospace</option>
+                        <option value="Montserrat">Montserrat</option>
+                    </select>
+
+                    <img class="btn" src="ICONS/text stroke.png" alt="" onclick="onBorderColor()">
+                    <input id="textColor" class="btn text-color" type="color" onchange="onChangeColor(this)">
+                </div>
+
+                <div class="add-items flex align-center space-between">
+                    <img class="btn2" src="ICONS/left.png" alt="">
+                    <img class="btn2" src="ICONS/right.png" alt="">
+                </div>
+                <div class="download-container flex flex-end">
+                    <a class="Download" href="#" onclick="onDownloadMeme(this)" download="">Download</a>
+                </div>
+            </div>
         </main>
 
     </div>
@@ -92,7 +80,7 @@
     </div>
     <footer class="main-footer  flex column align-center">
         <img class="logo-bottom" src="./pic/LOGO.png" alt="">
-        <p class="footer-text">all rights reserved 2019</p>
+        <p class="footer-text">all rights reserved 2020</p>
     </footer>
     <script src="js/utils.js"></script>
     <script src="js/memeService.js"></script>
