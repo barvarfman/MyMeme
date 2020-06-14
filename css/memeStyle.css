@@ -279,10 +279,10 @@ button {
 
 @media (max-width: 1000px) {
     .main-content {
-        width: 30rem;
+        width: 20rem;
         height: 50rem;
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 15px;
     }
     .Download {
         margin-bottom: 15px;
