@@ -282,7 +282,8 @@ button {
         width: 20rem;
         height: 50rem;
         flex-direction: column;
-        margin-left: 15px;
+       margin-top: 10px;
+      margin-left: 0;
     }
     .Download {
         margin-bottom: 15px;
@@ -298,10 +299,13 @@ button {
         width: 20rem;
         height: 30rem;
         margin: 0 auto;
+        margin-left: 24px;
     }
     .canvas-container {
+        margin-top: 5px;
         margin: 0 auto;
         width: 325px;
         height: 300px;
+        margin-left: 24px;
     }
 }
