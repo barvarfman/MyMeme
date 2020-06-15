@@ -165,6 +165,3 @@ function onSwitchlines() {
 
 
 
-function onToggleMenu() {
-    document.body.classList.toggle('menu-open');
-}
